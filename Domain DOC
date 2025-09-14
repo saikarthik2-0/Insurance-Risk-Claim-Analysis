@@ -1,0 +1,89 @@
+# 📘 Insurance Risk & Claims Analysis – Domain Document
+
+This dataset contains detailed information about car insurance policyholders, their vehicles, and their claim history.  
+Each record represents an individual customer with **demographics, car details, and claim information** that can be used for risk profiling, claims analysis, and customer segmentation.
+
+---
+
+## 🔑 Fields & Definitions
+
+### 1. ID
+- **Definition**: Unique identifier for each policyholder.  
+- **Type**: Numeric/Text (Primary Key).  
+- **Business Use**: Maintains data integrity, links claims and renewals.
+
+### 2. Birthdate
+- **Definition**: Policyholder’s date of birth.  
+- **Type**: Date.  
+- **Business Use**: Used to calculate **Age**, segment into groups (<25, 25–40, 40–60, 60+).
+
+### 3. Car Color
+- **Definition**: Car’s exterior color.  
+- **Type**: Text.  
+- **Business Use**: Pattern analysis (fraud detection, theft trends).
+
+### 4. Car Make
+- **Definition**: Brand/manufacturer (Toyota, BMW, Ford).  
+- **Type**: Text.  
+- **Business Use**: Claims analysis by brand → risk & repair cost.
+
+### 5. Car Model
+- **Definition**: Specific model (Corolla, X5, etc.).  
+- **Type**: Text.  
+- **Business Use**: Luxury vs economy claim trends.
+
+### 6. Car Use
+- **Definition**: Purpose (Personal, Commercial, Commute).  
+- **Type**: Text.  
+- **Business Use**: Risk profiling (commercial cars = higher risk).
+
+### 7. Car Year
+- **Definition**: Year of manufacture.  
+- **Type**: Numeric.  
+- **Business Use**: Car age = Current Year – Car Year; risk segmentation.
+
+### 8. Coverage Zone
+- **Definition**: Geographic risk area (Urban, Rural, Zone A…).  
+- **Type**: Text.  
+- **Business Use**: Regional claims/risk analysis.
+
+### 9. Education
+- **Definition**: Highest education attained.  
+- **Type**: Text.  
+- **Business Use**: Marketing, claim behavior insights.
+
+### 10. Gender
+- **Definition**: Policyholder gender.  
+- **Type**: Text.  
+- **Business Use**: Risk & demographic breakdowns.
+
+### 11. Marital Status
+- **Definition**: Single, Married, Divorced, etc.  
+- **Type**: Text.  
+- **Business Use**: Compare claims by marital stability.
+
+### 12. Parent
+- **Definition**: Whether the policyholder has children (Yes/No).  
+- **Type**: Boolean.  
+- **Business Use**: Segment household profiles.
+
+### 13. Claim Amt
+- **Definition**: Total claim amount.  
+- **Type**: Numeric (Currency).  
+- **Business Use**: KPI for losses, fraud detection.
+
+### 14. Claim Freq
+- **Definition**: Number of claims filed.  
+- **Type**: Integer.  
+- **Business Use**: High-frequency claimants = higher risk.
+
+### 15. Household Income
+- **Definition**: Annual household income.  
+- **Type**: Numeric.  
+- **Business Use**: Segmentation by income band; premium targeting.
+
+### 16. Kids Driving
+- **Definition**: Number of kids licensed to drive.  
+- **Type**: Integer.  
+- **Business Use**: Family risk estimation, accident probability.
+
